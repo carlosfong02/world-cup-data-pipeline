@@ -22,6 +22,14 @@ El proceso sigue la metodología **ETL (Extract, Transform, Load)**:
     * Creación automatizada de base de datos **SQLite**.
     * Persistencia de datos en la tabla `fact_partidos`.
 
+### 🛠️ Tecnologías Utilizadas
+
+* **Lenguaje:** `Python 3.11`
+* **Librerías:** `Pandas`, `NumPy`
+* **Base de Datos:** `SQLite3`
+* **Entorno de Desarrollo:** `Visual Studio Code`
+* **Control de Versiones:** `Git` & `GitHub`
+
 ### 📂 Estructura del Proyecto
 
 ```text
@@ -29,13 +37,7 @@ fifa-etl-pipeline/
 │
 ├── FIFA World Cup 1930-2022.csv  # Dataset Original (Fuente de Datos)
 ├── etl_pipeline.py               # Script Principal (ETL Process)
-├── analisis.ipynb                # Jupyter Notebook (Análisis SQL)
+├── analysis.ipynb                # Jupyter Notebook (Análisis SQL)
 ├── fifa_world_cup.db             # Base de Datos Generada (Output)
 └── README.md                     # Documentación del Proyecto
-
-### 🛠️ Tecnologías Utilizadas
-* **Lenguaje:** `Python 3.11`
-* **Librerías:** `Pandas`, `NumPy`
-* **Base de Datos:** `SQLite3`
-* **Entorno de Desarrollo:** `Visual Studio Code`
-* **Control de Versiones:** `Git` & `GitHub`
+```
