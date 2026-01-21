@@ -5,7 +5,7 @@ import sqlite3
 pd.set_option('display.max_columns', None)
 
 try:
-    # 'latin1' para evitar errores de caracteres especiales
+    # 'latin1' evita errores de caracteres especiales
     df = pd.read_csv('FIFA-World-Cup-1930-2022.csv', encoding='latin1')
 except FileNotFoundError:
     exit("No se encuentra el archivo CSV")
@@ -16,7 +16,7 @@ df.info()
 # Muestra las primeras 3 filas
 print(df.head(3))
 
-# Recorre todas las columnas, quita espacios, convierte a minúsculas y reemplaza espacios por guiones bajos.
+# Recorre todas las columnas, quita espacios, convierte a minúsculas y reemplaza espacios por guiones bajos
 df.columns = [col.strip().lower().replace(' ', '_').replace('-', '_') for col in df.columns]
 
 # Convierte la fecha de texto (Object) a formato Fecha real (Datetime)
